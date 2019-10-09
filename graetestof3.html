@@ -1,0 +1,36 @@
+
+<html>
+<body>
+
+<h2>simple calculation</h2>
+<input type="text" id="Anum1" >
+<input type="text" id="Anum2" >
+<input type="text" id="Anum3" >
+<p> click add to add two numbers</p>
+
+<button onclick="largest()">greatest of 3 numbers</button>
+
+<script>
+	function largest()
+	{
+		var num1, num2, num3;
+		num1 = Number(document.getElementById("Anum1").value);
+		num2 = Number(document.getElementById("Anum2").value);
+		num3 = Number(document.getElementById("Anum3").value);
+
+		if(num1>num2 && num1>num3)
+		{
+			window.alert(num1+"-is greatest");
+		}
+		else if(num2>num1 && num2>num3)
+		{
+			window.alert(num2+"-is greatst");
+		}
+		else if(num3>num1 && num3>num1)
+		{
+			window.alert(num3+"-is greatest");
+		}
+	}
+</script>
+ </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+
+<body>
+
+  <h1>"this an mouse event example"</h1>
+   
+  <h2 id="demo">Hi Guvi</h2>
+
+<script>
+document.getElementById("demo").onmouseover = function() {mouseOver()};
+document.getElementById("demo").onmouseout = function() {mouseOut()};
+
+
+
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+  document.body.style.backgroundColor = "orange";
+
+}
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+  document.body.style.backgroundColor = "white";
+
+}
+
+
+
+
+</script>
+</body>
+</html>
+  
